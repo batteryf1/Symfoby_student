@@ -1,0 +1,17 @@
+univercity_schedule_homepage:
+    path:     /
+    defaults: { _controller: UnivercityScheduleBundle:Default:index }
+
+# src/Univercity/ScheduleBundle/Resources/config/routing.yml
+univercity_schedule_homepage_group:
+    path:     /show_group
+    defaults: { _controller: "UnivercityScheduleBundle:Groups:index" }
+    requirements:
+         methods:  GET
+
+# src/Univercity/ScheduleBundle/Resources/config/routing.yml
+univercity_schedule_homepage_student:
+    path:     /show_student
+    defaults: { _controller: "UnivercityScheduleBundle:Student:index" }
+    requirements:
+         methods:  GET
